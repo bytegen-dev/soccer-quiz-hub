@@ -345,6 +345,11 @@ body{
             justify-content: center;
             align-items: center;
             position: relative;
+            transition: all 0.5s ease;
+
+            &:hover{
+                opacity: 0.4;
+            }
 
             @media screen and (max-width: 660px) {
                 gap: 9px;
@@ -352,14 +357,24 @@ body{
     
             img{
                 width: 30px;
-    
+                animation: spin-logo 5s ease forwards infinite alternate;
+                
                 &:first-child{
                     position: absolute;
                     left: 10px;
                 }
-
+                
                 @media screen and (max-width: 660px) {
                     width: 25px;
+                }
+            }
+
+            @keyframes spin-logo {
+                0%{
+                    transform: rotate(360deg);
+                }
+                100%{
+                    transform: rotate(0deg);
                 }
             }
     
@@ -367,6 +382,7 @@ body{
                 @media screen and (max-width: 660px) {
                     font-size: 15px;
                     line-height: 14px;
+                    margin-left: 5px;
                 }
                 transition: all 0.5s ease;
                 font-size: 18px;
