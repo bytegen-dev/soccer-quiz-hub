@@ -340,6 +340,13 @@ function App() {
       dispatch({type: "hide-menu", value: false})
     }
   },[location.pathname])
+
+  useEffect(()=>{
+    window.addEventListener("contextmenu", (e)=>{
+      e.preventDefault()
+      dispatch({type: "toggle-menu", value: true})
+    })
+  },[])
   
   useEffect(() => {
     let interval;
