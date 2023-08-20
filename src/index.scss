@@ -61,6 +61,7 @@ body{
 
             .notification-bar{
                 transform: translateY(0);
+                font-family: monospace, sans-serif;
             }
 
             .links-holder{
@@ -357,11 +358,12 @@ body{
     
             img{
                 width: 30px;
-                animation: spin-logo 5s ease forwards infinite alternate;
+                animation: spin-logo 9s ease forwards infinite alternate;
                 
                 &:first-child{
                     position: absolute;
                     left: 10px;
+                    animation: spin-logo 5s ease forwards infinite alternate;
                 }
                 
                 @media screen and (max-width: 660px) {
