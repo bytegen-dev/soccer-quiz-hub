@@ -1657,7 +1657,7 @@ body{
             overflow-y: scroll;
             padding-bottom: 50px;
 
-            .x{
+            & > .x{
                 @media screen and (max-width: 550px) {
                     margin-top: 50px;
                 }
