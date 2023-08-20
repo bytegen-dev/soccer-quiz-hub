@@ -83,9 +83,9 @@ const Quizzes = () => {
             </p> */}
           </div>
           <div className="quiz-container">
-            {quizzesData.quizzes.map((test)=>{
+            {quizzesData.quizzes.map((test, index)=>{
               return (
-                <div className="quiz" key={test.id}>
+                <div className="quiz" key={index}>
                   {test.imgUrl?.length > 0 && <img src={test.imgUrl} alt="quiz-img" style={{background: "#666", color: "#0000"}} />}
                   <Link className="goto" to={`/quiz/${test.slug}`}>
                     <FaArrowRight />
