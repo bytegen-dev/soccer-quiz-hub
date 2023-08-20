@@ -256,14 +256,14 @@ const Quiz = () => {
                 }}  className="open"><FaChevronDown />
                 </button>
               </div>
-<button className="submit-now" onClick={()=>{
-              appState.functions.toggleLoader(true)
-              setTimeout(()=>{
-                appState.functions.submitTest(quizData)
-              },1500)
-            }} id='submit'>
-              Submit
-            </button>
+              <button className="submit-now" onClick={()=>{
+                appState.functions.toggleLoader(true)
+                setTimeout(()=>{
+                  appState.functions.submitTest(quizData)
+                },1500)
+              }} id='submit'>
+                Submit
+              </button>
             </div>
 
             <div className="calculator">

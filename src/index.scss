@@ -1747,7 +1747,14 @@ body{
                     justify-content: space-between;
                     flex-wrap: wrap;
                     text-align: left;
+
+                    &>p{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
                 }
+
+                
 
                 .quiz-progress{
                     font-size: 23px;
@@ -1821,6 +1828,7 @@ body{
                     display: flex;
                     gap: 7px;
                     align-items: center;
+                    width: 100%;
                 }
 
                 .submit-now{
@@ -1831,9 +1839,8 @@ body{
                     font-weight: 600;
                     color: #fff;
                     transition: all 0.5s ease;
-                    margin-left: 10px;
                     border-radius: 10px;
-border: none;
+                    border: none;
                     
                     &:hover, &:focus{
                         transform: scale(1.1);
