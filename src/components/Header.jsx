@@ -43,8 +43,8 @@ const Header = () => {
             <div className="logo" onClick={()=>{
                 navigate("/")
             }}>
-                <img src={logoOne} alt="thunder" />
                 <img src={logoTwo} alt="thunder" />
+                <img src={logoOne} alt="thunder" />
                 <p>
                     Quiz <br />Hub
                 </p>
