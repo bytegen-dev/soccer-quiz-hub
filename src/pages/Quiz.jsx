@@ -261,6 +261,14 @@ const Quiz = () => {
             <div className="calculator">
               <BsCalculatorFill />
             </div>
+            <button className="submit-now" onClick={()=>{
+              appState.functions.toggleLoader(true)
+              setTimeout(()=>{
+                appState.functions.submitTest(quizData)
+              },1500)
+            }} id='submit'>
+              Submit
+            </button>
           </div>
           <div className={`questions-container ${showPaginationContent ? "show-pagination" : ""}`}>
             <Swiper

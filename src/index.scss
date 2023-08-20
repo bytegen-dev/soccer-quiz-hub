@@ -1822,6 +1822,22 @@ body{
                     gap: 7px;
                     align-items: center;
                 }
+
+                .submit-now{
+                    padding: 10px 15px;
+                    background-color: #333;
+                    font-family: "Raleway", monospace;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                    transition: all 0.5s ease;
+                    
+                    &:hover, &:focus{
+                        transform: scale(1.1);
+                        margin-left: 10px;
+                        border-radius: 10px;
+                    }
+                }
             }
             
             .spacer{
