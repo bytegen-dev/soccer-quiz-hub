@@ -256,12 +256,7 @@ const Quiz = () => {
                 }}  className="open"><FaChevronDown />
                 </button>
               </div>
-            </div>
-
-            <div className="calculator">
-              <BsCalculatorFill />
-            </div>
-            <button className="submit-now" onClick={()=>{
+<button className="submit-now" onClick={()=>{
               appState.functions.toggleLoader(true)
               setTimeout(()=>{
                 appState.functions.submitTest(quizData)
@@ -269,6 +264,12 @@ const Quiz = () => {
             }} id='submit'>
               Submit
             </button>
+            </div>
+
+            <div className="calculator">
+              <BsCalculatorFill />
+            </div>
+            
           </div>
           <div className={`questions-container ${showPaginationContent ? "show-pagination" : ""}`}>
             <Swiper
