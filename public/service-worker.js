@@ -6,8 +6,8 @@ self.addEventListener("install", (event)=>{
             return cache.addAll([
                 "/",
                 "/index.html",
-                "/static/js.bundle.js",
-                "/static/css/index.scss",
+                "/static/js/main.03365142.js", // Corrected path to your main JavaScript file
+                "/static/css/main.a96359ff.css",
             ])
         })
     )
